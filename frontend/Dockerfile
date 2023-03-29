@@ -2,7 +2,8 @@ FROM node:17-alpine as builder
 WORKDIR /app/frontend
 
 COPY . .
-RUN npm install
+RUN npm install --force
+RUN npm install react-scripts
 
 
 EXPOSE 3000

@@ -10,4 +10,5 @@ COPY . .
 RUN composer install
 
 EXPOSE 8000
+RUN composer update --no-scripts
 CMD php artisan serve --host=0.0.0.0
