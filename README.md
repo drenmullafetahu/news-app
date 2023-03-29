@@ -24,15 +24,16 @@ If you want to change them you can change it on router.jsx for front-end and `ph
 
 ### Option B
 ####Using Docker
-1. On your terminal go to the root of the project (news-app) and run `docker-compose up --build -d` to create the docker containers. 
+1. Copy `.env.example` to `.env` (on backend Folder)
+2. On your terminal go to the root of the project (news-app) and run `docker-compose up --build -d` to create the docker containers. 
 This will create 3 containers 1 for backend 1 for front-end and one for mysql .
-2. Run `docker ps` to list the created containers.
-3. Find the backend container-id. and run docker `docker exec -it <your_backend_containerId> bash`.
-4. Inside backend container run `php artisan migrate` to create the database and the tables inside and exit.
-5. Copy `.env.example` to `.env` (on backend Folder)
-6. Find `DB_HOST=127.0.0.1` and replace with `DB_HOST=<your_backend_containerId>`
-7. Run `docker compose up` to start the apps.
-8. Visit [http://localhost:3000](http://localhost:3000) to view it in your browser.
+3. Run `docker ps` to list the created containers.
+4. Find and copy the `<your_db_containerId>` It should be something like (`news-app-master-db-1`).
+5. On .env file locate `DB_HOST=127.0.0.1` and replace with `DB_HOST=<your_db_containerId>`
+6. Inside backend container (`docker exec -it <your_backend_containerId> bash`) run `php artisan migrate` to create the database and the tables inside and exit.
+7. Run again `docker-compose up --build -d` to rebuild.
+8. Run `docker compose up` to start the apps.
+9. Visit [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 Note: 
 1. I use Mac M1 Silicone chip on my computer, therefore I am required to use a different `db: platform:` configuration for my db Platform.
