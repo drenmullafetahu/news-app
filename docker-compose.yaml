@@ -46,6 +46,7 @@ services:
       MYSQL_USER: 'root'
       MYSQL_PASSWORD: ''
       MYSQL_ROOT_PASSWORD: ''
+      MARIADB_ALLOW_EMPTY_ROOT_PASSWORD: 'true'
 
     volumes:
       - .dbdata:/var/lib/mysql/
