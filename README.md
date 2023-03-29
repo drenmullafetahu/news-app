@@ -6,7 +6,7 @@ This project is created from Dren Mullafetahu as a test application for Innoscri
 
 In order to run application you have two options:
 ### Option A
-####Seperate
+#### Seperate
 You can run the apps (Front end and Backend seperately)
 #### For Backend (on backend folder) do the following
 1. Create a copy of `.env` file from  `.env.example` file and replace your configurations.
@@ -23,7 +23,7 @@ Note: The apps run by default port:3000 for front-end and port:8000 for backend.
 If you want to change them you can change it on router.jsx for front-end and `php artisan serve --port:xxxx` by adding a port flag on backend.
 
 ### Option B
-####Using Docker
+#### Using Docker
 1. Copy `.env.example` to `.env` (on backend Folder)
 2. On your terminal go to the root of the project (news-app) and run `docker-compose up --build -d` to create the docker containers. 
 This will create 3 containers 1 for backend 1 for front-end and one for mysql .
