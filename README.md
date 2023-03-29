@@ -4,7 +4,7 @@ This project is created from Dren Mullafetahu as a test application for Innoscri
 
 ## Installation
 
-In order to run application you have two options:
+In order to run the application you have two options:
 ### Option A
 #### Seperate
 You can run the apps (Front end and Backend seperately)
