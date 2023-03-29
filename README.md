@@ -72,8 +72,8 @@ Notes:
 8. Logout destroys the token.
 
 ## Some Screenshots
-<img style="width: 100px" src="./frontend/public/assets/scr_login.png" alt="Alt text" title="Optional title">
-<img style="width: 200px" src="./frontend/public/assets/scr_home.png" alt="Alt text" title="Optional title">
+<img style="width: 400px" src="./frontend/public/assets/scr_login.png" alt="Alt text" title="Optional title">
+<img style="width: 400px" src="./frontend/public/assets/scr_home.png" alt="Alt text" title="Optional title">
 <img style="width: 909px" src="./frontend/public/assets/scr_search.png" alt="Alt text" title="Optional title">
 
 ### Mobile responsiveness
