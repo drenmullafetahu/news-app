@@ -67,9 +67,9 @@ Notes:
 2. User is created in database by registering.
 3. Validation is added to Login and Register.
 4. After Registration an ACCESS_TOKEN is set to Session storage. On logout it's deleted.
-5. On home page when the prefered categories and Source is seletected, a axios request is made to backend routes and then the api calls to collect news dataare made from backend. Also selected categories and source are saved to database for the personalized feed.
+5. On home page when the prefered categories and Source are seletected, an axios request is made to backend routes and then the api calls to collect news data which are called from backend. Also selected categories and source are saved to database for the personalized feed.
 6. Same goes for search. User searches, the input goes to backend routes and then the api calls are made from the selected filters.
-7. SearchParams are used to make the search and filters.
+7. SearchParams are used to make the searches and filters.
 8. Logout destroys the token.
 
 ## Some Screenshots
